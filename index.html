@@ -6,16 +6,27 @@
     <title>Corner Tuck</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
+    <div id="sidebar">
+      <a href="#home">Home</a></li>
+      <a href="#library">Library</a></li>
+      <a href="#about">About</a></li>
+      <a href="contact">Contact</a></li>
+    </div>
+    
     <header>
-      <nav class="main-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#library">Library</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+      <a href="index.html">
+        <div id="header-image">
+          <img width="250" height="250" src="Photos/logo1.jpg" alt="A globe coming out of an opened book">
+          <h1 id="flashingHeader">Corner Tuck</h1>
+        </div>
+      </a>
+      <div id="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="search()">Search</button>
+      </div>
     </header>
 
     <main>
