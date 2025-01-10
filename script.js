@@ -15,3 +15,27 @@ function readSummary(id) {
   speech.lang = "en-US";
   window.speechSynthesis.speak(speech);
 }
+
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.width === '250px') {
+      sidebar.style.width = '0';
+    } else {
+      sidebar.style.width = '250px';
+    }
+  }
+  function flashHeader() {
+    var header = document.getElementById("flashingHeader");
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  
+    setInterval(function() {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      header.style.color = randomColor;
+    }, 4000);
+  } 
+
+  function search() {
+    var searchInput = document.getElementById("searchInput").value;
+    alert("Searching for: " + searchInput);
+  }
+  flashHeader();
