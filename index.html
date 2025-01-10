@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Tuck</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#library">Library</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Your Little Nook</h1>
+        <p>Discover your next universe today</p>
+        <button id="increase-text" class="accessibility-btn">Increase Text Size</button>
+        <button id="decrease-text" class="accessibility-btn">Decrease Text Size</button>
+      </section>
+
+      <section id="library">
+        <h2>Our Collection</h2>
+        <div class="book-grid">
+          <div class="book-item">
+            <img src="images/book1.jpg" alt="Book cover of...."> //put literature classic1
+            <h3>LiteratureClassic1</h3>
+            <p id="summary1">A novel by so so & so... by so so & so about so so & so</p>
+            <button class="tts-btn" onclick="readSummary(`summary1`)">Summary Audio</button>
+          </div>
+          <div class="book-item">
+            <img src="images/book2.jpg" alt="Book cover of....">
+            <h3>LiteratureClassic2</h3>
+            <p id="summary2">A novel by so so & so... by so so & so about so so & so</p>
+            <button class="tts-btn" onclick="readSummary(`summary2`)">Summary Audio</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Corner Tuck is a ....</p>
+      </section>
+
+      <section id="contact">
+        <h4>Contact Us</h4>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <imput type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Corner Tuck. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
