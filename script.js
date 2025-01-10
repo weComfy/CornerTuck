@@ -10,6 +10,32 @@ decreaseTextBtn.addEventListener("click", () => {
   document.body.style.fontSize = "1em";
 });
 
+const sidebar = document.getElementById('sidebar');
+const menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', function(event) {
+  event.stopPropagation();
+
+  if (sidebar.style.width === '250px') {
+    sidebar.style.width = '0';
+  } else {
+    sidebar.style.width = '250px';
+  }
+
+  document.body.classList.toggle('sidebar-open');
+});
+
+document.addEventListener('click', function(event) {
+  if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
+    sidebar.style.width = '0';
+    document.body.classList.remove('sidebar-open');
+  }
+});
+
+sidebar.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+
 function readSummary(id) {
   const text = document.getElementById(id).textContent;
   const speech = new SpeechSynthesisUtterance(text);
