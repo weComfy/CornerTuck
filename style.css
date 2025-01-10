@@ -107,6 +107,9 @@ header {
     padding-top: 60px;
 }
 
+body.sidebar-open main {
+  margin-left:250px;
+}
 #sidebar a {
     padding: 15px 25px;
     text-decoration: none;
