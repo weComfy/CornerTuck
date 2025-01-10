@@ -103,7 +103,7 @@ header {
     left: 0;
     background-color: #100329;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.5s ease;
     padding-top: 60px;
 }
 
@@ -113,7 +113,7 @@ header {
     font-size: 20px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 #sidebar a:hover {
