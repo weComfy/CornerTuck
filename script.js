@@ -1,3 +1,4 @@
+const defaultFontSize = "1em";
 const increaseTextBtn = document.getElementById("increase-text");
 const decreaseTextBtn = document.getElementById("decrease-text");
 
@@ -18,12 +19,14 @@ function readSummary(id) {
 
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
-    if (sidebar.style.width === '250px') {
+    const currentWidth = sidebar.style.width;
+    if (sidebar.style.width === '250px' || currentWidth === ' ') {
       sidebar.style.width = '0';
     } else {
       sidebar.style.width = '250px';
     }
   }
+
   function flashHeader() {
     var header = document.getElementById("flashingHeader");
     var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
@@ -36,6 +39,10 @@ function toggleSidebar() {
 
   function search() {
     var searchInput = document.getElementById("searchInput").value;
+    if (searchInput.trim() === ""){
+      alert("Enter search term.");
+    } else {
     alert("Searching for: " + searchInput);
+    }
   }
   flashHeader();
