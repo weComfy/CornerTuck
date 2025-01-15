@@ -16,6 +16,18 @@ body {
   color: #333;
 }
 
+#library h3 {
+  text-align: center;
+  margin-top: 20px:
+}
+.book-item h4,
+.book-item h5,
+.book-item h6,
+.book-item h7,
+.book-item h8 {
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6, h7, h8 {
   color: #4a3f35;
 }
@@ -100,7 +112,9 @@ header {
 }
 
 .menu-button {
-    cursor: pointer;
+  font-size: 24px;
+  padding: 15px 20px;
+  cursor: pointer;
 }
 
 #sidebar {
