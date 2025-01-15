@@ -44,6 +44,7 @@ function readSummary(id) {
 }
 
 function toggleSidebar() {
+    document.body.classList.toggle(`sidebar-open`);
     const sidebar = document.getElementById('sidebar');
     const currentWidth = sidebar.style.width;
     if (sidebar.style.width === '250px' || currentWidth === ' ') {
