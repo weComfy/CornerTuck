@@ -110,14 +110,14 @@ header {
 body.sidebar-open main {
   margin-left:250px;
 }
-#sidebar a {
+/* #sidebar a {
     padding: 15px 25px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s ease;
-}
+} */
 
 #sidebar a:hover {
     color: #f1f1f1;
