@@ -44,8 +44,9 @@ function readSummary(id) {
 }
 
 function toggleSidebar() {
-  var sidebar = document.getElementById("sidebar");
-  if (sidebar.style.width === "250px") {
+  const sidebar = document.getElementById("sidebar");
+  const currentWidth = sidebar.style.width;
+  if (sidebar.style.width === "250px" || currentWidth === ` `) {
     sidebar.style.width = "0";
   } else {
     sidebar.style.width = "250px";
