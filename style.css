@@ -85,6 +85,18 @@ body.sidebar-open main {
   border-radius: 5px;
   text-align: center;
   max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.book-item img {
+  wiidth: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .book-item h4,
@@ -93,6 +105,9 @@ body.sidebar-open main {
 .book-item h7,
 .book-item h8 {
   font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
 
