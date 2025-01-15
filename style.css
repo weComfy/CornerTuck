@@ -103,7 +103,12 @@ body.sidebar-open main {
 .book-item h5,
 .book-item h6,
 .book-item h7,
-.book-item h8 {
+.book-item h8,
+.book-item h9,
+.book-item h10,
+.book-item h11,
+.book-item h12,
+.book-item h13 {
   font-weight: bold;
   margin-top: 10px;
   font-size: 16px;
