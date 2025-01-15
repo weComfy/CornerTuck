@@ -54,7 +54,7 @@ function toggleSidebar() {
     }
   }
 
-  function flashHeader() {
+  /*function flashHeader() {
     var header = document.getElementById("flashingHeader");
     var colors = ["white", "grey", "black", "teal"];
   
@@ -62,7 +62,7 @@ function toggleSidebar() {
       var randomColor = colors[Math.floor(Math.random() * colors.length)];
       header.style.color = randomColor;
     }, 4000);
-  } 
+  } */
 
   function search() {
     var searchInput = document.getElementById("searchInput").value;
