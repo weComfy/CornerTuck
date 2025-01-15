@@ -45,7 +45,12 @@ function readSummary(id) {
 
 function toggleSidebar() {
   var sidebar = document.getElementById("sidebar");
-  sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+  if (sidebar.style.width === "250px") {
+    sidebar.style.width = "0";
+  } else {
+    sidebar.style.width = "250px";
+  }
+  //sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
    /* document.body.classList.toggle(`sidebar-open`); */
     /* const sidebar = document.getElementById('sidebar');
     const currentWidth = sidebar.style.width;
