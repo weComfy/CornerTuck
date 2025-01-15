@@ -128,8 +128,12 @@ body.sidebar-open main {
   text-align: center;
   background: #e7ded6;
   padding: 2em 1em;
+  margin-top: 0;
 }
 
+main {
+  margin-top: 0;
+}
 
 .accessibility-btn {
   background: #6b4226;
