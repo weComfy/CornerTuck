@@ -1,6 +1,6 @@
 
 body {
-  font-family: Limelight, serif;
+  font-family: `Merriweather`, serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -9,6 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8 {
+  font-family: `Playfair Display`, serif;
   color: #4a3f35;
 }
 
@@ -34,6 +35,9 @@ header {
 }
 
 #header-image h1 {
+  font-family: `Playfair Display`, serif;
+  font-weight: 700;
+  font-size: 36px
   color: white;
 }
 
@@ -71,6 +75,7 @@ body.sidebar-open main {
 }
 
 #sidebar a {
+  font-family: `Merriweather`, serif;
   padding: 15px 25px;
   text-decoration: none;
   font-size: 20px;
@@ -123,6 +128,7 @@ body.sidebar-open main {
 .book-item h11,
 .book-item h12,
 .book-item h13 {
+  font-family: `Pplayfair Display`, serif;
   font-weight: bold;
   margin-top: 10px;
   font-size: 16px;
@@ -135,6 +141,16 @@ body.sidebar-open main {
   background: #e7ded6;
   padding: 2em 1em;
   margin-top: 0;
+}
+
+.hero h2 {
+  font-family: `Playfair Display`, serif;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-family: `Playfair Display`, serif;
+  font-size: 1.2em;
 }
 
 main {
@@ -168,6 +184,7 @@ main {
 }
 
 button {
+  font-family: `Merriweather`, serif;
   padding: 10px 15px;
   background-color: #6b4226;
   color: white;
@@ -181,6 +198,7 @@ button:hover {
 
 
 footer {
+  font-family: `Merriweather`, serif;
   text-align: center;
   background: #333;
   color: white;
