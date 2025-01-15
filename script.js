@@ -45,18 +45,18 @@ function readSummary(id) {
 
 function toggleSidebar() {
     document.body.classList.toggle(`sidebar-open`);
-    const sidebar = document.getElementById('sidebar');
+    /*const sidebar = document.getElementById('sidebar');
     const currentWidth = sidebar.style.width;
     if (sidebar.style.width === '250px' || currentWidth === ' ') {
       sidebar.style.width = '0';
     } else {
       sidebar.style.width = '250px';
     }
-  }
+  }*/
 
   function flashHeader() {
     var header = document.getElementById("flashingHeader");
-    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    var colors = ["white", "grey", "black", "teal"];
   
     setInterval(function() {
       var randomColor = colors[Math.floor(Math.random() * colors.length)];
