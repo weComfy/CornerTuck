@@ -45,12 +45,28 @@ function readSummary(id) {
 
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
+  const menuButton = document.querySelector(".menu-button");
   const currentWidth = sidebar.style.width;
-  if (sidebar.style.width === "250px" || currentWidth === ` `) {
+  sidebar.style.width = currentWidth === "250px" ? "0" : "250px";
+}
+ /* if (sidebar.style.width === "250px" || currentWidth === ` `) {
     sidebar.style.width = "0";
   } else {
     sidebar.style.width = "250px";
-  }
+  }*/
+
+  menuButton.addEventListener("click", function (event) {
+    event.stopPropogation();
+    toggleSidebar();
+  });
+  document.addEventListener("click", function (event) {
+    if(!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
+      sidebar.style.width = "0";
+    }
+  });
+  sidebar.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
   //sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
    /* document.body.classList.toggle(`sidebar-open`); */
     /* const sidebar = document.getElementById('sidebar');
