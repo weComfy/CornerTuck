@@ -42,10 +42,10 @@ function readSummary(id) {
   speech.lang = "en-US";
   window.speechSynthesis.speak(speech);
 }
-
-function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   const menuButton = document.querySelector(".menu-button");
+
+function toggleSidebar() {
   const currentWidth = sidebar.style.width;
   sidebar.style.width = currentWidth === "250px" ? "0" : "250px";
 }
@@ -63,7 +63,7 @@ function toggleSidebar() {
     if(!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
       sidebar.style.width = "0";
     }
-  });
+  };
   sidebar.addEventListener("click", function (event) {
     event.stopPropagation();
   });
@@ -96,4 +96,4 @@ function toggleSidebar() {
     alert("Searching for: " + searchInput);
     }
   }
-  flashHeader();
+  //flashHeader();
