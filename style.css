@@ -8,7 +8,7 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8 {
+h1, h2, h3, h4, h5, h6{
   font-family: "Playfair Display", serif;
   color: #4a3f35;
 }
@@ -134,13 +134,7 @@ body.sidebar-open main {
 .book-item h4,
 .book-item h5,
 .book-item h6,
-.book-item h7,
-.book-item h8,
-.book-item h9,
-.book-item h10,
-.book-item h11,
-.book-item h12,
-.book-item h13 {
+.book-item span {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   margin-top: 10px;
