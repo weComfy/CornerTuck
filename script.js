@@ -4,11 +4,11 @@ const decreaseTextBtn = document.getElementById("decrease-text");
 
 increaseTextBtn.addEventListener("click", () => {
   document.body.style.fontSize = "1.2em";
-}
+})
 
 decreaseTextBtn.addEventListener("click", () => {
   document.body.style.fontSize = "1em";
-}
+})
 
 const sidebar = document.getElementById('sidebar');
 const menuButton = document.querySelector('.menu-button');
@@ -25,13 +25,13 @@ function toggleSidebar() {
 menuButton.addEventListener('click', function(event) {
   event.stopPropagation();
   toggleSidebar();
-}
+})
 
-document.addEventListener('click', function(event) {
+/*document.addEventListener('click', function(event) {
   if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
     sidebar.style.width = '0';
  }
-}
+})*/
 
   sidebar.addEventListener('click', function(event) {
   event.stopPropagation();
