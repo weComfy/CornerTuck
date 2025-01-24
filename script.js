@@ -56,7 +56,7 @@ function toggleSidebar() {
   }*/
 
   menuButton.addEventListener("click", function (event) {
-    event.stopPropogation();
+    event.stopPropagation();
     toggleSidebar();
   });
   document.addEventListener("click", function (event) {
