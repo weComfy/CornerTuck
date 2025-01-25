@@ -28,7 +28,7 @@ function toggleSidebar() {
 }
 
 menuButton.addEventListener('click', function(event) {
-  //event.stopPropagation();
+  event.stopPropagation();
   toggleSidebar();
 })
 
