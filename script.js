@@ -19,12 +19,6 @@ const menuButton = document.querySelector('.menu-button');
 
 function toggleSidebar() {
   sidebar.classList.toggle(`open`);
-  /*const currentWidth = sidebar.style.width;
-  if (currentWidth === "250px") {
-    sidebar.style.width = "0";
-  } else {
-    sidebar.style.width = "250px";
-  }*/
 }
 
 menuButton.addEventListener('click', function(event) {
@@ -35,22 +29,31 @@ menuButton.addEventListener('click', function(event) {
 document.addEventListener('click', function(event) {
   if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
     sidebar.classList.remove(`open`);
-    //sidebar.style.width = '0';
  }
 })
-
- /* sidebar.addEventListener('click', function(event) {
-  event.stopPropagation();
-}*/
-
 
 function readSummary(id) {
   const text = document.getElementById(id).textContent;
   const speech = new SpeechSynthesisUtterance(text);
   speech.lang = "en-US";
+  currentSpeech = speech;
   window.speechSynthesis.speak(speech);
 }
 
+function pauseSummary() {
+  if (currentSpeech && window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  } else if (currentSpeech) {
+    window.speechSynthesis.pause();
+  }
+}
+
+function stopSummary() {
+  if (currentSpeech) {
+    window.speechSynthesis.cancel();
+    currentSpeech = null;
+  }
+}
 
 function search() {
    const searchInput = document.getElementById("searchInput").value;
