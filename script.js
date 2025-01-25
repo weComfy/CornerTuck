@@ -14,6 +14,7 @@ const sidebar = document.getElementById('sidebar');
 const menuButton = document.querySelector('.menu-button');
 
 function toggleSidebar() {
+  sidebar.classList.toggle("open");
   const currentWidth = sidebar.style.width;
   if (currentWidth === "250px") {
     sidebar.style.width = "0";
@@ -23,12 +24,13 @@ function toggleSidebar() {
 }
 
 menuButton.addEventListener('click', function(event) {
-  event.stopPropagation();
+  //event.stopPropagation();
   toggleSidebar();
 })
 
 document.addEventListener('click', function(event) {
   if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
+    sidebar.classList.remove("open");
     sidebar.style.width = '0';
  }
 })
