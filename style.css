@@ -67,6 +67,10 @@ header {
   z-index: 999;
 }
 
+#sidebar.open {
+  width: 250px;
+}
+
 body.sidebar-open #sidebar {
   width: 250px;
 }
