@@ -19,12 +19,12 @@ const menuButton = document.querySelector('.menu-button');
 
 function toggleSidebar() {
   sidebar.classList.toggle("open");
-  const currentWidth = sidebar.style.width;
+  /*const currentWidth = sidebar.style.width;
   if (currentWidth === "250px") {
     sidebar.style.width = "0";
   } else {
     sidebar.style.width = "250px";
-  }
+  }*/
 }
 
 menuButton.addEventListener('click', function(event) {
