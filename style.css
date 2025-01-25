@@ -89,6 +89,17 @@ body.sidebar-open main {
   color: #f1f1f1;
 }
 
+.menu-button {
+  font-size: 24px;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #6b4226;
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;}
+
 
 .book-grid {
   display: flex;
