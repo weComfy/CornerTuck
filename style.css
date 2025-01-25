@@ -48,6 +48,8 @@ header {
 
 
 #library h3 {
+  font-size: 2em;
+  font-weight: bold;
   text-align: center;
   width: 100%;
   margin: 0 auto;
