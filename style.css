@@ -209,6 +209,13 @@ button:hover {
   background-color: #4a3f35;
 }
 
+.team-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
 footer {
   font-family: "Merriweather", serif;
