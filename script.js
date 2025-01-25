@@ -1,13 +1,17 @@
-const defaultFontSize = "1em";
+const defaultFontSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+let currentFontSize = defaultFontSize;
+
 const increaseTextBtn = document.getElementById("increase-text");
 const decreaseTextBtn = document.getElementById("decrease-text");
 
 increaseTextBtn.addEventListener("click", () => {
-  document.body.style.fontSize = "1.2em";
+  currentFontSize += 2;
+  document.body.style.fontSize = `${currentFontSize}px`;
 })
 
 decreaseTextBtn.addEventListener("click", () => {
-  document.body.style.fontSize = "1em";
+  currentFontSize -= 2;
+  document.body.style.fontSize = `${currentFontSize}px`;
 })
 
 const sidebar = document.getElementById('sidebar');
@@ -31,7 +35,7 @@ menuButton.addEventListener('click', function(event) {
 document.addEventListener('click', function(event) {
   if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
     sidebar.classList.remove("open");
-    sidebar.style.width = '0';
+    //sidebar.style.width = '0';
  }
 })
 
