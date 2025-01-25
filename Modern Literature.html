@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corner Tuck</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&display=swap">
     <script src="script.js"defer></script>
   </head>
   
   <body>
     
     <header>
-      <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+      <div class="menu-button">☰ Menu</div>
         <div id="header-image">
           <a href="index.html">
           <img width="250" height="250" src="Photos/logo1.jpg" alt="A globe coming out of an opened book">
           <h1>Corner Tuck</h1>
+          </a>
         </div>
       <div id="search-bar">
         <input type="text" id="searchInput" placeholder="Search...">
@@ -28,8 +30,6 @@
       <a href="about.html">About</a>
     </div>
     </header>
-
-    <div style="height: 100px;"></div>
 
     <main>
       <section id="home" class="hero">
@@ -62,13 +62,13 @@
           </div>
           <div class="book-item">
             <img src="Photos/book8.jpg" alt="Book cover of The Curious Incident of the Dog in the Night-Time">
-            <h7>The Curious Incident of the Dog in the Night-Time</h7>
+            <span>The Curious Incident of the Dog in the Night-Time</span>
             <p id="summary9">A novel by Mark Haddon. Our protagonist, 15 year old Christopher Boone, is gifted but socially challenged. He discovers his neighbour's dog dead under mysterious circumstances and sets out to solve the mystery. Emboldened by determination, logic and his love of Sherlock Holmes he discovers more than he bargained for. This is a captivating and heartwarming exploration of perspective, trust and the remarkable ways we make sense of the world around us.</p>
             <button class="tts-btn" onclick="readSummary(`summary9`)">Summary Audio</button>
           </div>
           <div class="book-item">
             <img src="Photos/book9.jpg" alt="Book cover of The Kite Runner">
-            <h8>The Kite Runner</h8>
+            <span>The Kite Runner</span>
             <p id="summary10">A novel by Khaled Hosseini. Set in Kabul in the 1930's, our protagonist Amir and his loyal friend Hassan share an inseperable bond. However, a single act of betrayal changes their lives forever. Many years later, tormented by guilt and the landscape of war-torn Afghanistan, Amir sets off on a journey of redemption that challenges his courage and exposes buried secrets. An emotional tale of friendship, betrayal and the neverending search for forgiveness.</p>
             <button class="tts-btn" onclick="readSummary(`summary10`)">Summary Audio</button>
           </div>
