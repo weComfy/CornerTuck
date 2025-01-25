@@ -211,6 +211,7 @@ button:hover {
 
 .team-img {
   display: block;
+  align-items: center;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
