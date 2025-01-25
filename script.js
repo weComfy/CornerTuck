@@ -27,15 +27,15 @@ menuButton.addEventListener('click', function(event) {
   toggleSidebar();
 })
 
-/*document.addEventListener('click', function(event) {
+document.addEventListener('click', function(event) {
   if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
     sidebar.style.width = '0';
  }
-})*/
+})
 
-  sidebar.addEventListener('click', function(event) {
+ /* sidebar.addEventListener('click', function(event) {
   event.stopPropagation();
-}
+}*/
 
 
 function readSummary(id) {
@@ -47,7 +47,7 @@ function readSummary(id) {
 
 
 function search() {
-   var searchInput = document.getElementById("searchInput").value;
+   const searchInput = document.getElementById("searchInput").value;
    if (searchInput.trim() === ""){
      alert("Enter search term.");
    } else {
